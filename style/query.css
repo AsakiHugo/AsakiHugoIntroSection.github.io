@@ -1,0 +1,183 @@
+@media (max-width: 1280px) {
+    .home {
+        padding: 100px 50px 50px;
+    }
+}
+
+@media (max-width: 1187px) {
+    .home {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 60px;
+    }
+    .home .content-container {
+        align-items: center;
+        gap: 50px;
+    }
+    .content-container .content {
+        text-align: center;
+        width: 900px;
+        align-items: center;
+    }
+    .content .title span {
+        display: inline;
+    }
+    .content-container .media {
+        gap: 100px;        
+    }
+    .content .title {
+        font-size: 85px;
+    }
+    .content .description {
+        text-align: center;
+        font-size: 24px;
+        width: 600px;
+        line-height: 40px;
+        padding: 50px 0;
+    }
+    .home .hero-img {
+        width: 100%;
+        height: 500px;
+        background: url(/images/image-hero-mobile.png) no-repeat center center;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 1000px) {
+    .home {
+        padding: 100px 10px 50px;
+        gap: 30px;
+    }
+    .content-container .content {
+        width: 80%;
+        align-items: center;
+    }
+    .content-container .media {
+        gap: 30px;        
+    }
+    .content .title {
+        font-size: 32px;
+    }
+    .content .description {
+        font-size: 18px;
+        width: 100%;
+        line-height: 30px;
+        padding: 30px 0;
+    }
+    .close-menu.active,
+    .open-menu.active {
+        display: block;
+    }
+    .navigation nav {
+        width: 60%;
+        height: 100vh;
+        position: absolute;
+        right: -800px;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 50px;
+        padding: 180px 80px;
+        background-color: var(--Almost-White);
+        transition: all .5s ease-out;
+    }
+    .navigation nav.active {
+        right: 0;
+    }
+    .nav-left-side .nav-lists {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 60px;
+    }
+    nav .nav-right-side {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .nav-right-side .btn {
+        width: 240px;
+    }
+    .overlay.active {
+        opacity: 1;
+    }
+    .dropdown .dropdown-menu {
+        z-index: 999;
+        top: -240px;
+        left: 0;
+        width: 170px;
+    }
+}
+
+@media (max-width: 530px) {
+    .navigation nav {
+        width: 70%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 180px 30px;
+    }
+    nav .nav-right-side {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .nav-right-side .btn {
+        width: 200px;
+    }
+    .home .hero-img {
+        width: 100%;
+        height: 300px;
+        background: url(/images/image-hero-mobile.png) no-repeat center center;
+        background-size: contain;
+    }
+    .content-container .content {
+        width: 100%;
+        align-items: center;
+    }
+    .content-container .media {
+        gap: 10px;        
+    }
+    .attribution { 
+        font-size: 13px; 
+        word-spacing: 1px;
+    }
+    .attribution a:hover {
+        font-size: 14px;
+        padding: 0;
+    }
+    .nav-left-side .nav-lists {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .home {
+        padding: 100px 0px 50px;
+    }
+    .home .hero-img {
+        width: 90%;
+        height: 300px;
+        background: url(/images/image-hero-mobile.png) no-repeat center center;
+        background-size: contain;
+    }
+    .content-container .content {
+        width: 90%;
+        align-items: center;
+    }
+    .content-container .media img {
+        width: 70px;       
+    }
+    .nav-right-side .btn {
+        width: 100%;
+    }
+}
